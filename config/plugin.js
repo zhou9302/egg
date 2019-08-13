@@ -6,4 +6,8 @@ module.exports = {
   // static: {
   //   enable: true,
   // }
+  axios: {
+    enable: true,
+    package: 'axios',
+  },
 };
