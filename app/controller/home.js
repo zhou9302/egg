@@ -9,12 +9,14 @@ class HomeController extends Controller {
     const { ctx } = this;
     console.log(ctx);
     console.log(ctx.request.body);
+    ctx.logger.info('some request data: %j', ctx.request.body);
     const result = await ctx.curl('https://www.fenghuangbao.com:13443/ckyl/app/api/financing/getProduct', {
       method: 'post',
       contentType: 'json',
       data: ctx.request.body,
       dataType: 'json',
     });
+    ctx.logger.info('result', result.data);
     ctx.body = result.data;
   }
 }
