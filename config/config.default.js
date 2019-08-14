@@ -22,6 +22,11 @@ module.exports = appInfo => {
     csrf: false,
   };
 
+  exports.alinode = {
+    // 从 `Node.js 性能平台` 获取对应的接入参数
+    appid: '81201',
+    secret: '13c06cb4a3cb8ede72aeab9fa838cb17cebbc504',
+  };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

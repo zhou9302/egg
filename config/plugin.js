@@ -10,4 +10,8 @@ module.exports = {
     enable: true,
     package: 'axios',
   },
+  alinode: {
+    enable: true,
+    package: 'egg-alinode',
+  },
 };
