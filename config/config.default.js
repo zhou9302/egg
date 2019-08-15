@@ -24,6 +24,7 @@ module.exports = appInfo => {
 
   exports.alinode = {
     // 从 `Node.js 性能平台` 获取对应的接入参数
+    enable: true,
     appid: '81201',
     secret: '13c06cb4a3cb8ede72aeab9fa838cb17cebbc504',
     error_log: [ 'xxxx/appname-web.log', 'xxx/common-error.log', 'xxx/egg-agent.log' ],
